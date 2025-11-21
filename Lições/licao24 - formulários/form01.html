@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="icon" href="data:,">
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
@@ -12,10 +11,12 @@
     </style>
 </head>
 <body>
-    <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <h1>Formulário Teste</h1>
+    <form action="cadastro.php" method="get"> <!--GET quando os dados não forem sensíveis e só até 3 mil bits, e POST quando os dados forem importantes como senhas e envio de fotos e imagens-->
+        <p><label for="nome">Nome:</label> 
+            <input type="text" name="nome" id="nome"></p>
+        <p><label for="sobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="sobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
