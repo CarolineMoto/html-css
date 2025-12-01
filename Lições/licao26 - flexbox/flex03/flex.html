@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
-        div.container {
+        div.container1 {
             background-color: pink;
             display: flex;
-            flex-flow: nowrap;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        div.container2 {
+            background-color: pink;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        div.container3 {
+            background-color: pink;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+        }
+
+        div.container4 {
+            background-color: pink;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
         }
 
         div.item {
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
         }
 
         /*Eixos:
@@ -32,7 +53,37 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container1">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+    <br>
+    <div class="container3">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+    <br>
+    <div class="container4">
         <div class="item">Exemplo de bloco A</div>
         <div class="item">Exemplo de bloco B</div>
         <div class="item">Exemplo de bloco C</div>

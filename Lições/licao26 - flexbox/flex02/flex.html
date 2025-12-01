@@ -5,40 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
-        div.container {
+        div.container1 {
             background-color: pink;
             display: flex;
             flex-direction: row;
         }
 
+        div.container2 {
+            background-color: rgb(170, 116, 221);
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        div.container3 {
+            background-color: hotpink;
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.container4 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
         div.item {
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
             padding: 10px;
         }
-
-        /*Eixos:
-            flex-direction: row (o main-axis vai para a esquerda para a direita, e o cross-axis vai de cima para baixo)
-            flex-direction: row-reverse (o main-axis vai da direita para a esquerda, e o cross-axis não tem alteração)
-            flex-direction: column (o main-axis vai de cima para baixo em vertical, e o cross-axis da esquerda pra direita de forma horizontal)
-            flex-direction: column-reverse (o main-axis vai de cima para baixo vertical, e o cross-axis vai horizontal da esquerda para a direita)
-            flex-wrap: nowrap (não quebra, tenta enxutar o conteúdo ao máximo)
-            flex-wrap: wrap (pega o último elemento e o quebra no sentido do eixo transversal (cross-axis))
-            flex-wrap: wrap-reverse (quando tiver uma diminuída, terá a quebra mas no sentido oposto do eixo transversal (irá para cima))
-        */
-
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container1">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
+    </div>
+    <div class="container2">
         <div class="item">D</div>
         <div class="item">E</div>
         <div class="item">F</div>
+    </div>
+    <div class="container3">
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+    </div>
+    <div class="container4">
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
     </div>
 </body>
 </html>
