@@ -5,11 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
-        div.container {
+        div.container1 {
+            background-color: pink;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: stretch;
+            height: 400px;
+        }
+
+        div.container2 {
+            background-color: pink;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start;
+            height: 400px;
+        }
+
+        div.container3 {
+            background-color: pink;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-end;
+            height: 400px;
+        }
+
+        div.container4 {
+            background-color: pink;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            height: 400px;
+        }
+
+        div.container5 {
+            background-color: pink;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+            height: 400px;
+        }
+
+        div.container6 {
             background-color: pink;
             display: flex;
             flex-flow: row wrap;
             align-content: space-evenly;
+            height: 400px;
+        }
+
+        div.container7 {
+            background-color: pink;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-around;
             height: 400px;
         }
 
@@ -19,18 +67,10 @@
             text-align: center;
             padding: 40px;
         }
-
-        /*Eixos:
-            flex-direction: row (o main-axis vai para a esquerda para a direita, e o cross-axis vai de cima para baixo)
-            flex-direction: row-reverse (o main-axis vai da direita para a esquerda, e o cross-axis não tem alteração)
-            flex-direction: column (o main-axis vai de cima para baixo em vertical, e o cross-axis da esquerda pra direita de forma horizontal)
-            flex-direction: column-reverse (o main-axis vai de cima para baixo vertical, e o cross-axis vai horizontal da esquerda para a direita)
-        */
-
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container1">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
@@ -38,6 +78,108 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <br>
+    <div class="container3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <br>
+    <div class="container4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <br>
+    <div class="container5">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <br>
+    <div class="container6">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <br>
+    <div class="container7">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
     </div>
 </body>
 </html>
