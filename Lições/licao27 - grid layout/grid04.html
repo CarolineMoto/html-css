@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.container1 {
+           background-color: pink;
+           
+           display: grid;
+           grid-template-columns: auto auto auto;
+           grid-template-rows: 50px 50px 50px;
+           justify-items: stretch;
+        }
+
+        div.container2 {
+           background-color: pink;
+           
+           display: grid;
+           grid-template-columns: auto auto auto;
+           grid-template-rows: 50px 50px 50px;
+           justify-items: start;
+        }
+
+        div.container3 {
+           background-color: pink;
+           
+           display: grid;
+           grid-template-columns: auto auto auto;
+           grid-template-rows: 50px 50px 50px;
+           justify-items: end;
+        }
+
+        div.container4 {
+           background-color: pink;
+           
+           display: grid;
+           grid-template-columns: auto auto auto;
+           grid-template-rows: 50px 50px 50px;
+           justify-items: center;
+        }
+
+        div.item {
+           background-color: lightblue;
+           border: 1px solid black;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    <br>
+    <div class="container3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    <br>
+    <div class="container4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>
