@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.container1 {
+            border: 3px solid blue;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px 100px;
+            grid-auto-rows: 100px; /*qualquer linha acrescentada fica no tamanho certo*/
+            grid-auto-columns: 100px; /*qualquer coluna acrescentada fica no tamanho certo*/
+        }
+
+        div.container2 {
+            border: 3px solid blue;
+            display: grid;
+            grid-template: 100px 100px 100px / auto auto auto;
+            place-items: stretch center;
+            place-content: start end;
+        }
+
+        div.item {
+           border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+</body>
+</html>
